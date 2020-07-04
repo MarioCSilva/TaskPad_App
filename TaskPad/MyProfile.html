@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!--===============================================================================================-->    
+        <link rel="icon" type="image/png" href="login/images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="login/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="login/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="login/vendor/animate/animate.css">
+    <!--===============================================================================================-->  
+        <link rel="stylesheet" type="text/css" href="login/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="login/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="login/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->  
+        <link rel="stylesheet" type="text/css" href="login/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="login/css/util.css">
+        <link rel="stylesheet" type="text/css" href="login/css/main.css">
+    <title>TaskPad</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+        <!--
+        CSS
+        ============================================= -->
+        <link rel="stylesheet" href="css/linearicons.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/nice-select.css">					
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <header id="header" id="home" style="background:rgba(0,0,0,0.8); height: 71px;">
+            <div class="container">
+                <div class="row align-items-center justify-content-between d-flex">
+                    
+                    <div id="mobile-nav-toggle" style="position:fixed; top:35.5px; left: 50%; transform: translate(-50%, -50%);">
+                        <h1 class="text-white" style="font-size:120%">Account Settings</h1>
+                    </div>
+                    <div id="mobile-nav-toggle" style="position:fixed; top:37px; left: 83%; transform: translate(-50%, -50%);">
+                        <a href="Pages.html">
+                            <img src="img/logo.png"  style="border-radius: 2%; height:8vw;max-height:30px" alt="" title="" />
+                        </a>
+                    </div>
+                  <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                      <li class="menu-active"><a href="Pages.html">Pages</a></li>
+                      <li><a href="Agenda.html">Agenda</a></li>
+                      <li><a href="Invites.html">Invites</a></li>
+                      <li><a href="MyProfile.html">Account  Settings</a></li>
+                      <li><a href="Help.html">Help</a></li>				          
+                      <li><a class="sendchat" style="color: white;">Send Feedback</a></li>
+                      <li><a href="index.html">Logout</a></li>
+                    </ul>
+                  </nav><!-- #nav-menu-container -->		    		
+                </div>
+            </div>
+          </header><!-- #header -->
+            <div  id="headertext" class="menu-content col-lg-12" >
+                
+                <div class="chat-popup" id="myForm" style="padding-top: 90px; position: relative;display: none">
+                    <form  class="form-container">
+                      <h1>Send Feedback</h1>
+                  
+                      <label for="msg"><b>Give us your feedback about our application</b></label>
+                      <textarea placeholder="Type message.." name="msg" required></textarea>
+                  
+                      <button id="sendfeed" type="submit" class="btn">Send</button>
+                      <button type="button" class="btn cancel" id="close">Close</button>
+                    </form>
+                  </div>
+        </div>
+          <body>
+    <div class="limiter">
+        <div class="container-login100" style="min-height: 100%;">
+            <div class="wrap-login100" style="background-color: #FFD700; width: 100%; height: 100%;" >
+                <div style="background-color: #FFD700; text-align:center; padding-top:90px; padding-bottom: 40px">
+                    <img src="" id="profilePic" style="border-radius: 50%; max-width: 40%;"/>
+                    <input type="file" class="custom-file-input"   style="font-weight:bold; color: black; display:none" id="pic1">
+                    <button class="btn btn-secondary btn-link" style="font-weight: bold; color: black; font-size: 17px; display:none" id="pic2">Change picture <i id="pic3" style="display:none" class="fa fa-file-image-o" aria-hidden="true"></i></button>
+                </div>
+                
+
+
+                <div class="container" id="normcontainer" style="background-color: white;padding: 5% 8% 15% 8%; min-width: 100%; min-height: 100%;">
+                    <h3>Username</h3>
+                    <div class="typography">
+                        <h4 id="username2"></h4>
+                    </div>
+                    <hr class="new2" style="border: 1px solid #FFD700;">
+                    <h4>Name</h4>
+                    <div class="typography">
+                        <h4 id="name2"></h4>
+                    </div>
+                    <hr class="new2" style="border: 1px solid #FFD700;">
+                    <h4>Email</h4>
+                    <div class="typography">
+                        <h4 id="email2"></h4>
+                    </div>
+                    <hr class="new2" style="border: 1px solid #FFD700;">
+
+                    <div class="container-login100-form-btn">
+                        <div class="wrap-login100-form-btn">
+                            <div class="login100-form-bgbtn"></div>
+                            <button id="editbtnprofile" class="login100-form-btn">
+                                Edit <span class="lnr lnr-pencil"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="container2">
+                      <button onclick="document.getElementById('id01').style.display='block'" class="btn btn-danger" style="margin-top: 40px;">Delete Account</button>
+                      </div>
+                      <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                        <form class="modal-content" action="/action_page.php" style="max-width: 800px;">
+                          <div class="container2" >
+                            <h1>Delete Account</h1>
+                            <p>Are you sure you want to delete your account?</p>
+                          
+                            <div class="clearfix">
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="min-height:40px">Cancel</button>
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" id="confdelete" class="deletebtn" style="min-height:40px">Delete</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+                
+                
+                <form target="frame"  id="form1" class="login100-form validate-form" style="background-color: white;height:60%; width: 100%; padding: 5% 8% 15% 8%; display: block; display :none">
+                    <span style="padding-top: 10px; font-size: 17px; font-weight: bold; width: 100%;">Name:</span>
+                    <div class="wrap-input100 validate-input" data-validate = "Insert a valid name!">
+                        <input class="input100 single-input form-control" type="text" style="width: 100%" value="" id="name" name="name" placeholder="Name" autocomplete="off" >
+                    </div>
+                    <span style="padding-top: 10px; font-size: 17px; font-weight: bold; width: 100%;">Email:</span>
+
+                    <div class="wrap-input100 validate-input" data-validate = "Insert a valid email!">
+                        <input class="input100 single-input form-control" style="width: 100%" type="text"  value="" id="email" name="name" placeholder="Email" autocomplete="off" >
+                    </div>
+                    <span style="padding-top: 10px; font-size: 17px; font-weight: bold; width: 100%;">Password:</span>
+
+                    <div class="wrap-input100 validate-input" data-validate="Enter the correct password!">
+                        <span class="btn-show-pass">
+                            <i class="zmdi zmdi-eye"></i>
+                        </span>
+                        <input class="input100 single-input form-control" type="password"  value="" id="password" name="password" style="width: 100%" placeholder="Password" autocomplete="off" >
+                    </div>
+                   <div  id="confirmbtn" class="container-login100-form-btn"  style="display:none;padding-bottom: 20px">
+                        <div class="wrap-login100-form-btn">
+                            <div class="login100-form-bgbtn"></div>
+                            <button class="login100-form-btn">
+                               Confirm Changes <span class="lnr lnr-pencil"></span>
+                            </button>
+                        </div>
+                    </div>
+                     <div  id="cancelbtn" class="container-login100-form-btn"  style="display:none">
+                        <div class="wrap-login100-form-btn">
+                            <div class="login100-form-bgbtn"></div>
+                            <button class="login100-form-btn">
+                               Cancel Changes/Go Back <span class="lnr lnr-pencil"></span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <style>
+      /* The Modal (background) */
+      .modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: #474e5d;
+padding-top: 50px;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+
+button:hover {
+opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+float: left;
+width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+background-color: #ccc;
+color: black;
+}
+.button2 {
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+.input-group .form-control{
+z-index: 1;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.container2 {
+padding: 16px;
+text-align: center;
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+border: 1px solid #888;
+width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+position: absolute;
+right: 35px;
+top: 15px;
+font-size: 40px;
+font-weight: bold;
+color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+color: #f44336;
+cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}
+
+@media screen and (max-width: 300px) {
+.cancelbtn, .deletebtn {
+width: 100%;
+}
+}
+</style>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+
+</script>    
+        <!-- End footer Area -->		
+
+        <script src="js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>			
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+          <script src="js/easing.min.js"></script>			
+        <script src="js/hoverIntent.js"></script>
+        <script src="js/superfish.min.js"></script>	
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>	
+        <script src="js/owl.carousel.min.js"></script>			
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>			
+        <script src="js/parallax.min.js"></script>		
+        <script src="js/mail-script.js"></script>	
+        <script src="js/users.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/EditUser.js"></script>	
+    </body>
+</html>
+
+
+

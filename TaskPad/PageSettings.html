@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="codepixer">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>TaskPad</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="icon" type="image/png" href="login/images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="login/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="login/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="login/vendor/animate/animate.css">
+    <!--===============================================================================================-->  
+        <link rel="stylesheet" type="text/css" href="login/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="login/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="login/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->  
+        <link rel="stylesheet" type="text/css" href="login/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="login/css/util.css">
+        <link rel="stylesheet" type="text/css" href="login/css/main.css">
+        <!--
+        CSS
+        ============================================= -->
+        <link rel="stylesheet" href="css/linearicons.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/nice-select.css">					
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+    </head>
+    <body style="background-color:#FFD700;  " >
+
+      <header id="header" id="home" style="background:rgba(0,0,0,0.8); height: 71px;">
+        <div class="container">
+            <div class="row align-items-center justify-content-between d-flex">
+                
+                <div id="mobile-nav-toggle" style="position:fixed; top:35.5px; left: 50%; transform: translate(-50%, -50%);">
+                    <h1 class="text-white" style="font-size:120%">Page Settings</h1>
+                </div>
+                <div id="mobile-nav-toggle" style="position:fixed; top:37px; left: 83%; transform: translate(-50%, -50%);">
+                    <a href="Pages.html">
+                        <img src="img/logo.png"  style="border-radius: 2%; height:8vw;max-height:30px" alt="" title="" />
+                    </a>
+                </div>
+              <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                  <li class="menu-active"><a href="Pages.html">Pages</a></li>
+                  <li><a href="Agenda.html">Agenda</a></li>
+                  <li><a href="Invites.html">Invites</a></li>
+                  <li><a href="MyProfile.html">Account  Settings</a></li>
+                  <li><a href="Help.html">Help</a></li>				          
+                  <li><a class="sendchat" style="color: white;">Send Feedback</a></li>
+                  <li><a href="index.html">Logout</a></li>
+                </ul>
+              </nav><!-- #nav-menu-container -->		    		
+            </div>
+        </div>
+      </header><!-- #header -->
+        <div  id="headertext" class="menu-content col-lg-12" >
+            
+        <div class="chat-popup" id="myForm" style="padding-top: 90px; position: relative;display: none">
+          <form  class="form-container">
+            <h1>Send Feedback</h1>
+                  
+            <label for="msg"><b>Give us your feedback about our application</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+        
+            <button id="sendfeed" type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" id="close">Close</button>
+          </form>
+        </div>
+    </div>
+
+	<div class ="container " style="padding-top: 85px;">
+              <div  id="headertext" class="menu-content pb-60 col-lg-12" >
+                <a id="goback" ><i class="fa fa-arrow-left fa-10x	" style="color:black; font-size: 2em;" ></i></a>
+                        <div class="title text-center" style="text-align: center;">
+                            <h1 class="mb-10">Page Settings</h1>
+
+                        </div>
+                        <h3>Name</h3>
+                        <hr class="new2" style="border: 1px solid black;">
+                        <div class="input-group mb-3" style="padding-top: 10px;">
+                          <input id="pagetitle" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <div class="container-login100-form-btn">
+                              <div class="wrap-login100-form-btn" style="border-radius:0%; border-top-right-radius: 15%; border-bottom-right-radius: 15%;">
+                                  <div class="login100-form-bgbtn"></div>
+                                  <button id="editname" class="login100-form-btn ">Rename</button>
+                              </div>
+                          </div>
+                          </div>
+                        </div>
+                        <br>
+
+                        <h3>Current Members</h3>
+                        <hr class="new2" style="border: 1px solid black;">
+                        <div  class="d-flex justify-content-center">
+                        <div id="membersgrid" style="padding-top:20px;align-self: center; width:22rem ; text-align: left ;background-color: #fefefe; box-shadow: 0px 0px 35px #595953; margin-top:30px; border-bottom-right-radius: 15%;">
+                          <div id="memberpart"></div>
+                        </div>
+                        
+                         
+                    </div>
+                        </div>
+                    <br>
+                    
+                    <h3 style="">Page Description</h3>
+                    <hr class="new2" style="border: 1px solid black;">
+                    <br>
+                    <div class="input-group">
+                      <textarea id="pagedesc" class="form-control" aria-label="With textarea" style="max-height: 200px;resize: none;"></textarea>
+                      <div class="input-group-append">
+                        <div class="container-login100-form-btn">
+                          <div class="wrap-login100-form-btn" style="border-radius:0%; border-top-right-radius: 15%; border-bottom-right-radius: 15%; padding-top: 6px;">
+                              <div class="login100-form-bgbtn"></div>
+                              <button id="editdesc"  data-container="body" data-toggle="popover" data-placement="bottom" data-content="Page Description changed with success!" class="login100-form-btn ">Change</button>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+              </br>
+      <div class="container2">        
+<button onclick="document.getElementById('id01').style.display='block'" class="btn btn-danger" style="margin-top: 40px;">Delete Page</button>
+</div>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+  <form class="modal-content" action="/action_page.php" style="max-width: 800px;">
+    <div class="container2" >
+      <h1>Delete Page</h1>
+      <p>Are you sure you want to delete this page?</p>
+    
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="min-height:40px">Cancel</button>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" id="confdelete" class="deletebtn" style="min-height:40px">Delete</button>
+      </div>
+    </div>
+  </form>
+</div>
+     
+
+    </div>
+   
+        <style>
+        
+
+        
+          .h5{
+            width:22rem;
+          }
+          
+             
+
+          
+          .fa-trash{
+            position: static;
+          }
+   @media only screen and (max-width: 799px){
+      
+            .mb-10 {
+              display: none;
+            }
+            hr{
+                max-width:100vw;
+                position: relative; 
+                margin-left: -50vw; 
+                left: 50%;
+            }
+            .popover-body{
+              max-width: 20rm;
+            }
+                     
+           }
+           @media only screen and (max-width: 400px){
+            #descrparea{
+                min-width:15rem ;
+            }
+           }      
+                             /* The Modal (background) */
+                        .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+
+button:hover {
+  opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+.button2 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.input-group .form-control{
+  z-index: 1;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.container2 {
+  padding: 16px;
+  text-align: center;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
+}
+
+    </style> 
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+        <script src="js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>			
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+          <script src="js/easing.min.js"></script>			
+        <script src="js/hoverIntent.js"></script>
+        <script src="js/superfish.min.js"></script>	
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>	
+        <script src="js/owl.carousel.min.js"></script>			
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>			
+        <script src="js/parallax.min.js"></script>		
+        <script src="js/mail-script.js"></script>	
+        <script src="js/main.js"></script>	
+        <script src="js/users.js"></script>
+        <script src="js/PageSettings.js"></script>
+    </body>
+</html>
+
+
+
