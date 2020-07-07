@@ -1,3 +1,6 @@
 # TaskPad_App
 ## Project for Human-Computer Interaction
-### Made by Mário Silva, Daniel Gomes (DanielGomes14) and Luís Valentim
+## Authors
+ - **[Mário Silva](https://github.com/MarioCSilva)**
+ - **[Daniel Gomes](https://github.com/DanielGomes14)**
+ - **Luís Valentim**
